@@ -1,6 +1,10 @@
+import { messages } from '@/lib/db/schema';
 import { cn } from '@/lib/utils'
 import { Message } from 'ai/react'
 import { FileQuestion, Loader2 } from 'lucide-react'
+import ReactMarkdown from 'react-markdown';
+
+
 
 interface Props {
   messages: Message[]
@@ -40,7 +44,8 @@ const MessageList = ({ messages, isLoading }: Props) => {
               }
             )}
           >
-            <p>{msg.content}</p>
+          
+            <p><ReactMarkdown>{msg.content}</ReactMarkdown> </p>
           </div>
         </div>
       ))}

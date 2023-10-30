@@ -43,7 +43,7 @@ export async function GET() {
           price_data: {
             currency: 'USD',
             product_data: {
-              name: 'ChatPDF Clone Pro',
+              name: 'DocReader',
               description: 'Unlimited PDF uploads!',
             },
             unit_amount: 2000,
